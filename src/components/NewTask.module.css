@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100%;
+  margin-top: calc(0px - 1.2rem - 6px);
+}
+
+.container .addForm {
+  display: flex;
+  justify-content: space-between;
+
+  width: 90%;
+  max-width: 46.125rem;
+  gap: .5rem;
+}
+
+.addForm input {
+  width: 100%;
+  background: var(--gray-500);
+  border: none;
+  resize: none;
+  height: 3.375rem;
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--gray-300);
+  line-height: 1.4;
+}
+
+.addForm button[type=submit] {
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--green-400);
+  color: var(--gray-700);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.1s;
+
+  display: flex;
+  gap: 8px;
+}
+
+.addForm button[type=submit]:hover {
+  background: var(--green-600);
+}
+
+.containerTasks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4rem 0 4rem 0;
+  width: 100%;
+}
+
+.containerTasks .listTasks {
+  width: 90%;
+  max-width: 46.125rem;
+}
+
+.listTasks .infoTasks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.infoTasks .createdTasks {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.createdTasks span {
+  font-size: .875rem;
+  font-weight: bold;
+  color: var(--purple-800);
+}
+
+.createdTasks .counterTasks {
+  height: 1.25rem;
+  width: 1.25rem;
+  background: none;
+  border: none;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--purple-800);
+  color: var(--white);
+
+  font-weight: 600;
+}
+
+.infoTasks .doneTasks {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.doneTasks span {
+  font-size: .875rem;
+  font-weight: bold;
+  color: springgreen;
+}
+
+.doneTasks .counterTasks {
+  height: 1.25rem;
+  width: 1.25rem;
+  background: none;
+  border: none;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green-400);
+  color: var(--gray-700);
+
+  font-weight: 600;
+  line-height: 0;
+}

@@ -1,0 +1,98 @@
+.containerTasksBusy {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 1rem;
+
+  background-color: tomato;
+}
+
+.containerTasksBusy .tasksWrapper {
+  width: 100%;
+  padding: 1rem;
+  gap: .75rem;
+
+  background-color: var(--gray-500);
+  border-radius: 8px;
+  border: 1px solid #333333;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+
+  display: flex;
+}
+
+.buttonCheck {
+  line-height: 0;
+  height: 2.2rem;
+  width: 2.2rem;
+
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  background-color: var(--gray-400);
+  color: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonCheck input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 1.25rem;
+  width: 1.25rem;
+  background: none;
+  border: none;
+  border-radius: 99px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--purple-800);
+}
+
+label {
+  display: flex;
+
+  width: 90%;
+  max-width: 39.5rem;
+
+  font-weight: 500;
+  font-size: .875rem;
+  line-height: 1.4;
+  color: var(--gray-100);
+  word-wrap: break-word;
+  overflow: scroll;
+}
+
+.buttonCheck input[type="checkbox"]:checked {
+  background-color: var(--green-400);
+  border: 2px solid var(--blue-600);
+
+  content: '\f00c';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: .50rem;
+  color: var(--white);
+}
+
+.buttonCheck input[type="checkbox"]:checked::after {
+  display: none;
+  background: #919;
+}
+
+.buttonTrash button {
+  line-height: 0;
+  padding: .3125rem;
+
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  background-color: var(--gray-400);
+  color: var(--white);
+}
+
+.buttonTrash button:hover {
+  background-color: var(--red-500);
+}

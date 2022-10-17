@@ -1,0 +1,39 @@
+.containerTasks .tasks {
+  width: 100%;
+  display: none;
+}
+
+.containerTasks .tasksEmpty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  border-top: 1px solid var(--gray-300);
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.tasksEmpty .empty {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+
+  gap: 1rem;
+  padding: 2.5rem;
+}
+
+.empty strong {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--gray-300);
+}
+
+.empty strong span {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--gray-300);
+}
